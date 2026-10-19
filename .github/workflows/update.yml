@@ -1,0 +1,34 @@
+name: Mettre à jour les alertes TAC
+
+on:
+  schedule:
+    - cron: '*/5 * * * *' # Exécution toutes les 5 minutes (limite minimale de GitHub)
+  workflow_dispatch: # Permet de le lancer manuellement
+
+permissions:
+  contents: write # Indispensable pour autoriser le robot à faire un git push
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupérer le code du dépôt
+        uses: actions/checkout@v4
+
+      - name: Configurer Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Installer le décodeur GTFS-RT
+        run: npm install gtfs-rt-bindings
+
+      - name: Lancer le script de récupération
+        run: node scripts/update-alerts.js
+
+      - name: Sauvegarder automatiquement les modifications sur GitHub
+        run: |
+          git config --global user.name "Robot Info Trafic"
+          git config --global user.email "robot@users.noreply.github.com"
+          git add alertes.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Mise à jour auto des alertes trafic" && git push)

@@ -1,0 +1,32 @@
+{
+  "entity": [
+    {
+      "alert": {
+        "headerText": { "translation": [{ "text": "Arrêt Jean Monnet P+R déplacé." }] },
+        "descriptionText": { "translation": [{ "text": "Ligne 6 dir. Rte de Lucinges et 7 dir. Perrier-Aubrac : La montée et la dépose se fera à l'arrêt situé devant le Lycée. Jusqu'à nouvel avis." }] },
+        "informedEntity": [{ "routeId": "6" }, { "routeId": "7" }]
+      }
+    },
+    {
+      "alert": {
+        "headerText": { "translation": [{ "text": "Fuite de gaz – Arrêt Pont d’Etrembières non desservi" }] },
+        "descriptionText": { "translation": [{ "text": "Fuite de gaz – ligne 4, arrêt Pont d’Etrembières non desservi dans les deux sens jusqu’à nouvel avis." }] },
+        "informedEntity": [{ "routeId": "4" }]
+      }
+    },
+    {
+      "alert": {
+        "headerText": { "translation": [{ "text": "L5-L6 : arrêt Collège La Géline non desservi" }] },
+        "descriptionText": { "translation": [{ "text": "L5-L6 : arrêt Collège La Géline non desservi. Report à l'arrêt Chemin des Teppes jusqu'à nouvel ordre." }] },
+        "informedEntity": [{ "routeId": "5" }, { "routeId": "6" }]
+      }
+    },
+    {
+      "alert": {
+        "headerText": { "translation": [{ "text": "Travaux sur la ligne T2 - Arrêt Gaillard Mairie non desservi" }] },
+        "descriptionText": { "translation": [{ "text": "Travaux - Ligne T2, arrêt Gaillard Mairie non desservi dans les deux sens de circulation jusqu'à nouvel avis. Arrêt de report : Feux-Follets." }] },
+        "informedEntity": [{ "routeId": "T2" }]
+      }
+    }
+  ]
+}
