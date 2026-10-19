@@ -15,6 +15,9 @@ exports.handler = async function(event, context) {
     // Décodage du format binaire Protobuf du GTFS-RT
     const feed = GtfsRealtimeBindings.transit_realtime.FeedMessage.decode(buffer);
 
+    // -> Affiche tout le contenu décodé dans les logs Netlify
+    console.log("Flux décodé avec succès :", JSON.stringify(feed, null, 2));
+
     return {
       statusCode: 200,
       headers: {
