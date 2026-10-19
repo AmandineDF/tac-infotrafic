@@ -1,9 +1,10 @@
 async function fetchTrafficAlerts() {
   const container = document.getElementById("traffic-alerts");
-  container.innerHTML = "<p>Chargement des informations trafic en direct...</p>";
 
   try {
     const response = await fetch('/.netlify/functions/trafic');
+    if (!response.ok) throw new Error("Erreur réseau");
+    
     const trafficData = await response.json();
 
     container.innerHTML = "";
@@ -17,9 +18,9 @@ async function fetchTrafficAlerts() {
       if (!item.alert) return;
       
       const alert = item.alert;
-      const title = alert.headerText?.translation[0]?.text || "Information trafic";
-      const description = alert.descriptionText?.translation[0]?.text || "";
-      const routes = alert.informedEntity ? alert.informedEntity.map(e => `Ligne ${e.routeId}`).join(", ") : "Réseau TAC";
+      const title = alert.headerText?.translation?.[0]?.text || "Information trafic";
+      const description = alert.descriptionText?.translation?.[0]?.text || "";
+      const routes = alert.informedEntity ? alert.informedEntity.map(e => `Ligne ${e.routeId || ''}`).filter(Boolean).join(", ") : "Réseau TAC";
 
       const card = document.createElement("div");
       card.className = "alert-card";
@@ -33,15 +34,18 @@ async function fetchTrafficAlerts() {
 
   } catch (error) {
     console.error("Erreur:", error);
-    container.innerHTML = "<p>Erreur lors du chargement des alertes en temps réel.</p>";
+    // On n'efface pas l'écran si un rafraîchissement échoue temporairement, pour garder l'affichage stable
+    if (container.children.length === 0) {
+      container.innerHTML = "<p>Erreur lors du chargement des alertes en direct.</p>";
+    }
   }
 }
 
-// Charger au démarrage et recharger la page entière toutes les 5 min pour l'écran d'accueil
+// 1. Charger au démarrage
 document.addEventListener("DOMContentLoaded", () => {
   fetchTrafficAlerts();
 
-  setTimeout(() => {
-    location.reload();
-  }, 2 * 60 * 1000);
+  // 2. Relancer la récupération automatiquement toutes les 2 minutes (120 000 ms) 
+  // sans recharger la page, pour un affichage fluide sur l'écran d'accueil
+  setInterval(fetchTrafficAlerts, 2 * 60 * 1000);
 });
