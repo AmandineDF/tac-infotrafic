@@ -9,6 +9,7 @@
     "parcel": "^2.12.0"
   },
   "dependencies": {
+    "gtfs-rt-bindings": "^4.10.0",
     "node-fetch": "^3.3.2"
   }
 }

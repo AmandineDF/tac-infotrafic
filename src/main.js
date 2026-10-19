@@ -9,7 +9,7 @@ async function fetchTrafficAlerts() {
     container.innerHTML = "";
 
     if (!trafficData.entity || trafficData.entity.length === 0) {
-      container.innerHTML = "<p>Aucune perturbation signalée pour le moment.</p>";
+      container.innerHTML = "<p>Aucune perturbation signalée sur le réseau.</p>";
       return;
     }
 
@@ -19,7 +19,7 @@ async function fetchTrafficAlerts() {
       const alert = item.alert;
       const title = alert.headerText?.translation[0]?.text || "Information trafic";
       const description = alert.descriptionText?.translation[0]?.text || "";
-      const routes = alert.informedEntity ? alert.informedEntity.map(e => `Ligne ${e.routeId}`).join(", ") : "";
+      const routes = alert.informedEntity ? alert.informedEntity.map(e => `Ligne ${e.routeId}`).join(", ") : "Réseau TAC";
 
       const card = document.createElement("div");
       card.className = "alert-card";
@@ -37,12 +37,10 @@ async function fetchTrafficAlerts() {
   }
 }
 
-// 1. Charger les alertes au démarrage
+// Charger au démarrage et recharger la page entière toutes les 5 min pour l'écran d'accueil
 document.addEventListener("DOMContentLoaded", () => {
   fetchTrafficAlerts();
 
-  // 2. Recharger entièrement la page toutes les 5 minutes (300 000 ms) 
-  // pour que l'écran d'accueil récupère les nouvelles données en direct
   setTimeout(() => {
     location.reload();
   }, 5 * 60 * 1000);
