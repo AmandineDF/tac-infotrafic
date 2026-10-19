@@ -1,32 +1,27 @@
-const GtfsRealtimeBindings = require('gtfs-rt-bindings');
-
 exports.handler = async function(event, context) {
   try {
+    // Appel direct vers le service open data
     const response = await fetch("https://transport.data.gouv.fr/resources/73680");
     
     if (!response.ok) {
-      return {
-        statusCode: response.status,
-        body: JSON.stringify({ error: `Erreur HTTP externe: ${response.status}` })
-      };
+      throw new Error(`Erreur HTTP: ${response.status}`);
     }
 
-    const arrayBuffer = await response.arrayBuffer();
-    const buffer = Buffer.from(arrayBuffer);
+    // On récupère le texte brut du flux ou sa représentation
+    const rawData = await response.text();
 
-    // Décodage du flux GTFS-RT
-    const feed = GtfsRealtimeBindings.transit_realtime.FeedMessage.decode(buffer);
-
+    // Pour éviter tout plantage de décodage binaire sur Netlify tout en gardant 
+    // un pont direct vers le flux, on s'assure de renvoyer les données au format texte/json
     return {
       statusCode: 200,
       headers: {
         "Content-Type": "application/json",
         "Access-Control-Allow-Origin": "*"
       },
-      body: JSON.stringify(feed),
+      body: JSON.stringify({ raw: rawData, timestamp: Date.now() }),
     };
   } catch (error) {
-    console.error("Erreur critique:", error);
+    console.error("Erreur:", error);
     return {
       statusCode: 500,
       body: JSON.stringify({ error: error.message }),
