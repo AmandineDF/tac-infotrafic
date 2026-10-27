@@ -1,6 +1,38 @@
-{
-  "source": "TAC Mobilités",
-  "rawPayload": "\n\r\n\u00032.0\u0010\u0000\u0018����\u0006\u0012�\u0002\n$2adbfa05-6d39-4b9c-a822-bd327b6ca2f5*�\u0002\n\f\b����\u0006\u0010����\u0006*\u0004\u0012\u0002T1*\u0003\u0012\u00014*\u0003\u0012\u00016*\u0003\u0012\u00017*\u0003\u0012\u000180\u00028\u0005R<\n:\n8Ajustements horaires à compter du lundi 2 novembre 2026Z�\u0001\n�\u0001\n�\u0001Ajustements horaires - À compter du lundi 2 novembre 2026, les horaires des lignes T1, 4, 6, 7 et 8 évoluent pour mieux correspondre à vos besoins. Pour consulter les changements et les nouveaux horaires : tac-mobilites.fr\u0012�\u0002\n$f8012329-6777-4800-a694-e9d926c21d9d*�\u0001\n\u0006\b����\u0006*\u0003\u0012\u00016*\u0003\u0012\u000170\u00028\tR%\n#\n!Arrêt Jean Monnet P+R déplacé.Z�\u0001\n�\u0001\n�\u0001Ligne 6 dir. Rte de Lucinges et 7 dir. Perrier-Aubrac : La montée et la dépose se fera à l'arrêt situé devant le Lycée. Jusqu'à nouvel avis.\u0012�\u0002\n$4d97b100-2813-41dc-9991-fb1cd54fc400*�\u0001\n\f\b����\u0006\u0010옏�\u0006*\u0003\u0012\u000180\n8\u0004RA\n?\n=Déviation Ligne 8  – Dir. Vétraz-M. Arrêts non desservisZ�\u0001\n�\u0001\n�\u0001Déviation Ligne 8 Arrêts Olympe de Gouges (report: Martinière) & Fraternité (report: Campus de l'Étoile) non desservis du 28/10 au 29/10.\u0012�\u0002\n$d43f5d8f-d7af-4f1d-a0d1-eb69eb3c7472*�\u0001\n\u0006\b����\u0006*\u0003\u0012\u00016*\u0003\u0012\u000150\u00028\tR3\n1\n/L5-L6 : arrêt Collège La Géline non desserviZ�\u0001\n�\u0001\n�\u0001L5-L6 : arrêt Collège La Géline non desservi. Report à l'arrêt Chemin des Teppes jusqu'à nouvel ordre. Horaires : bit.ly/3vsl1Zo\u0012�\u0002\n$ccafacc3-9d02-4e2d-95c2-42b211557501*�\u0001\n\f\b����\u0006\u0010����\u0006*\u0004\u0012\u0002T20\n8\u0004RA\n?\n=Travaux sur la ligne T2 - Arrêt Gaillard Mairie non desserviZ�\u0001\n�\u0001\n�\u0001Travaux - Ligne T2, arrêt Gaillard Mairie non desservi dans les deux sens de circulation jusqu'à nouvel avis. Arrêt de report : Feux-Follets.\u0012�\u0001\n$7eef3db4-85ea-4e9a-a598-2c7d3463fa75*�\u0001\n\f\b����\u0006\u0010옏�\u0006*\u0003\u0012\u000150\n8\u0004R=\n;\n9Déviation Ligne 5  – Dir. Hôpital Arrêt non desserviZ]\n[\nYDéviation Ligne 5 Arrêt Hôpital non desservi du 28/10 au 29/10. Arrêt report La Paix.\u0012�\u0001\n$e7fc5057-914c-4118-9bc9-fb2f648b25cf*�\u0001\n\f\b�Ɂ�\u0006\u0010컔�\u0006*\u0004\u0012\u0002T20\n8\u0004RA\n?\n=Déviation Ligne T2  – Dir. G. Fossard Arrêt non desservi Zs\nq\noDéviation Ligne T2 Arrêt Châtelaine non desservi de 21h à 6h du 28/10 au 30/10. Arrêt report Feux Follets.\u0012�\u0002\n$d562761c-2e5c-47b8-a15a-5b53d80e0ffc*�\u0002\n\f\b����\u0006\u0010쁟�\u0006*\u0004\u0012\u0002T1*\u0004\u0012\u0002T2*\u0003\u0012\u00014*\u0003\u0012\u00015*\u0003\u0012\u00016*\u0003\u0012\u00017*\u0003\u0012\u000180\u00028\u0007R,\n*\n(Vacances Scolaires – du 17/10 au 01/11Z�\u0001\n�\u0001\n�\u0001Vacances Scolaires – du 17/10 au 01/11 nos lignes circuleront en horaires du samedi et vacances scolaires. Préparez votre itinéraire bit.ly/3vsl1Zo\u0012�\u0001\n$e180c75d-f920-49ab-9f51-b63095705460*�\u0001\n\f\b����\u0006\u0010����\u0006*\u0003\u0012\u000180\n8\u0004R?\n=\n;Déviation Ligne 8  – Dir. G. Fossard Arrêt non desserviZe\nc\naDéviation Ligne 8 Arrêt Pont Neuf non desservi le 26/10 et le 28/10. Arrêt report République.",
-  "timestamp": "2026-10-27T11:13:53.002Z",
-  "entity": []
-}
+[
+    {
+        "title": "Ajustements horaires à compter du lundi 2 novembre 2026",
+        "description": "Ajustements horaires - À compter du lundi 2 novembre 2026, les horaires des lignes T1, 4, 6, 7 et 8 évoluent pour mieux correspondre à vos besoins. Pour consulter les changements et les nouveaux horaires : tac-mobilites.fr"
+    },
+    {
+        "title": "Arrêt Jean Monnet P+R déplacé.",
+        "description": "Ligne 6 dir. Rte de Lucinges et 7 dir. Perrier-Aubrac : La montée et la dépose se fera à l'arrêt situé devant le Lycée. Jusqu'à nouvel avis."
+    },
+    {
+        "title": "Déviation Ligne 8  – Dir. Vétraz-M. Arrêts non desservis",
+        "description": "Déviation Ligne 8 Arrêts Olympe de Gouges (report: Martinière) & Fraternité (report: Campus de l'Étoile) non desservis du 28/10 au 29/10."
+    },
+    {
+        "title": "L5-L6 : arrêt Collège La Géline non desservi",
+        "description": "L5-L6 : arrêt Collège La Géline non desservi. Report à l'arrêt Chemin des Teppes jusqu'à nouvel ordre. Horaires : bit.ly/3vsl1Zo"
+    },
+    {
+        "title": "Travaux sur la ligne T2 - Arrêt Gaillard Mairie non desservi",
+        "description": "Travaux - Ligne T2, arrêt Gaillard Mairie non desservi dans les deux sens de circulation jusqu'à nouvel avis. Arrêt de report : Feux-Follets."
+    },
+    {
+        "title": "Déviation Ligne 5  – Dir. Hôpital Arrêt non desservi",
+        "description": "Déviation Ligne 5 Arrêt Hôpital non desservi du 28/10 au 29/10. Arrêt report La Paix."
+    },
+    {
+        "title": "Déviation Ligne T2  – Dir. G. Fossard Arrêt non desservi ",
+        "description": "Déviation Ligne T2 Arrêt Châtelaine non desservi de 21h à 6h du 28/10 au 30/10. Arrêt report Feux Follets."
+    },
+    {
+        "title": "Vacances Scolaires – du 17/10 au 01/11",
+        "description": "Vacances Scolaires – du 17/10 au 01/11 nos lignes circuleront en horaires du samedi et vacances scolaires. Préparez votre itinéraire bit.ly/3vsl1Zo"
+    },
+    {
+        "title": "Déviation Ligne 8  – Dir. G. Fossard Arrêt non desservi",
+        "description": "Déviation Ligne 8 Arrêt Pont Neuf non desservi le 26/10 et le 28/10. Arrêt report République."
+    }
+]
