@@ -1,37 +1,32 @@
 const fs = require('fs');
 const path = require('path');
+const GtfsRealtimeBindings = require('gtfs-rt-bindings');
 
 async function updateAlerts() {
   try {
-    console.log("Récupération du flux...");
+    console.log("Téléchargement du flux GTFS-RT...");
     const response = await fetch("https://transport.data.gouv.fr/resources/73680");
     
     if (!response.ok) {
       throw new Error(`Erreur HTTP: ${response.status}`);
     }
 
-    // Au lieu de tenter un décodage Protobuf complexe qui plante, 
-    // on récupère le texte brut ou on structure un objet JSON propre pour votre affichage
     const arrayBuffer = await response.arrayBuffer();
-    
-    // On crée une structure JSON garantie valide pour que votre front l'affiche immédiatement
-    const fallbackData = {
-      entity: [
-        {
-          alert: {
-            headerText: { translation: [{ text: "Réseau TAC - Trafic en direct" }] },
-            descriptionText: { translation: [{ text: "Dernière vérification réussie par le robot GitHub Action à " + new Date().toLocaleTimeString() }] },
-            informedEntity: [{ routeId: "INFO" }]
-          }
-        }
-      ]
-    };
+    const buffer = Buffer.from(arrayBuffer);
+
+    console.log("Décodage du flux GTFS-RT...");
+    const feed = GtfsRealtimeBindings.transit_realtime.FeedMessage.decode(buffer);
+
+    // Si le flux est vide ou ne contient pas d'entités, on garde un message propre
+    if (!feed.entity || feed.entity.length === 0) {
+      console.log("Aucune alerte active trouvée dans le flux, génération d'un message vide.");
+    }
 
     const filePath = path.join(process.cwd(), 'alertes.json');
-    fs.writeFileSync(filePath, JSON.stringify(fallbackData, null, 2));
-    console.log("Fichier alertes.json généré avec succès !");
+    fs.writeFileSync(filePath, JSON.stringify(feed, null, 2));
+    console.log("Fichier alertes.json mis à jour avec succès avec les vraies données !");
   } catch (error) {
-    console.error("Erreur:", error);
+    console.error("Erreur lors de la mise à jour:", error);
     process.exit(1);
   }
 }
