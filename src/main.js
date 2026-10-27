@@ -1,4 +1,3 @@
-// Remplacez "VOTRE-PSEUDO" par votre nom d'utilisateur GitHub exact
 const JSON_URL = "https://raw.githubusercontent.com/AmandineDF/tac-infotrafic/main/alertes.json";
 
 async function fetchTrafficAlerts() {

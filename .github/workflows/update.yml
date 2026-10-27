@@ -2,11 +2,11 @@ name: Mettre à jour les alertes TAC
 
 on:
   schedule:
-    - cron: '*/5 * * * *' # Exécution toutes les 5 minutes (limite minimale de GitHub)
-  workflow_dispatch: # Permet de le lancer manuellement
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
 
 permissions:
-  contents: write # Indispensable pour autoriser le robot à faire un git push
+  contents: write
 
 jobs:
   update:
@@ -18,7 +18,7 @@ jobs:
       - name: Configurer Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '22'
 
       - name: Installer le décodeur GTFS-RT
         run: npm install gtfs-rt-bindings
