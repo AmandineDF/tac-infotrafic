@@ -2,9 +2,25 @@
   "entity": [
     {
       "alert": {
-        "headerText": { "translation": [{ "text": "Chargement des alertes en cours..." }] },
-        "descriptionText": { "translation": [{ "text": "Le système de récupération automatique est en cours d'initialisation." }] },
-        "informedEntity": [{ "routeId": "TAC" }]
+        "headerText": {
+          "translation": [
+            {
+              "text": "Réseau TAC - Trafic en direct"
+            }
+          ]
+        },
+        "descriptionText": {
+          "translation": [
+            {
+              "text": "Dernière vérification réussie par le robot GitHub Action à 10:56:01 AM"
+            }
+          ]
+        },
+        "informedEntity": [
+          {
+            "routeId": "INFO"
+          }
+        ]
       }
     }
   ]
