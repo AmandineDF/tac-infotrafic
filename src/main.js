@@ -1,48 +1,41 @@
-const JSON_URL = "https://raw.githubusercontent.com/AmandineDF/tac-infotrafic/main/alertes.json";
+const fs = require('fs');
+const path = require('path');
+const GtfsRealtimeBindings = require('gtfs-rt-bindings');
 
-async function fetchTrafficAlerts() {
-  const container = document.getElementById("traffic-alerts");
-
+async function updateAlerts() {
   try {
-    const response = await fetch(`${JSON_URL}?t=${Date.now()}`);
-    if (!response.ok) throw new Error("Erreur réseau");
+    console.log("Téléchargement du flux direct...");
+    const response = await fetch("https://proxy.transport.data.gouv.fr/resource/annemasse-tp2a-gtfs-rt-alerts");
     
-    const trafficData = await response.json();
-    container.innerHTML = "";
-
-    if (!trafficData.entity || trafficData.entity.length === 0) {
-      container.innerHTML = "<p>Aucune perturbation signalée sur le réseau.</p>";
-      return;
+    if (!response.ok) {
+      throw new Error(`Erreur HTTP: ${response.status}`);
     }
 
-    trafficData.entity.forEach(item => {
-      const alert = item.alert;
-      if (!alert) return;
+    const arrayBuffer = await response.arrayBuffer();
+    const buffer = Buffer.from(arrayBuffer);
 
-      const title = alert.headerText?.translation[0]?.text || "Information trafic";
-      const description = alert.descriptionText?.translation[0]?.text || "";
-      const routes = alert.informedEntity ? alert.informedEntity.map(e => `Ligne ${e.routeId}`).join(", ") : "Réseau TAC";
+    console.log("Décodage du flux GTFS-RT...");
+    const pb = GtfsRealtimeBindings.transit_realtime || GtfsRealtimeBindings;
+    const feed = pb.FeedMessage.decode(buffer);
 
-      const card = document.createElement("div");
-      card.className = "alert-card";
-      card.innerHTML = `
-        <div><span class="line-badge">${routes}</span></div>
-        <h3 style="margin: 8px 0 4px 0; font-size: 1.2em;">${title}</h3>
-        <p style="margin: 0; color: #555; font-size: 1.1em;">${description}</p>
-      `;
-      container.appendChild(card);
-    });
+    // Sécurité : si le flux est vide, on crée une structure avec une alerte d'information
+    if (!feed.entity || feed.entity.length === 0) {
+      feed.entity = [{
+        alert: {
+          headerText: { translation: [{ text: "Réseau TAC" }] },
+          descriptionText: { translation: [{ text: "Aucune perturbation en cours. Trafic normal." }] },
+          informedEntity: [{ routeId: "INFO" }]
+        }
+      }];
+    }
 
+    const filePath = path.join(process.cwd(), 'alertes.json');
+    fs.writeFileSync(filePath, JSON.stringify(feed, null, 2));
+    console.log("Fichier alertes.json mis à jour avec les vraies alertes décodées !");
   } catch (error) {
-    console.error("Erreur:", error);
-    if (container.children.length === 0) {
-      container.innerHTML = "<p>Chargement des alertes en cours...</p>";
-    }
+    console.error("Erreur lors de la mise à jour:", error);
+    process.exit(1);
   }
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  fetchTrafficAlerts();
-  // Actualise l'affichage sur l'écran toutes les 2 minutes
-  setInterval(fetchTrafficAlerts, 2 * 60 * 1000);
-});
+updateAlerts();
