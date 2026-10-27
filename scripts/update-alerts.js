@@ -15,16 +15,13 @@ async function updateAlerts() {
     const buffer = Buffer.from(arrayBuffer);
 
     console.log("Décodage du flux GTFS-RT...");
-    const feed = GtfsRealtimeBindings.transit_realtime.FeedMessage.decode(buffer);
-
-    // Si le flux est vide ou ne contient pas d'entités, on garde un message propre
-    if (!feed.entity || feed.entity.length === 0) {
-      console.log("Aucune alerte active trouvée dans le flux, génération d'un message vide.");
-    }
+    // Gestion sécurisée pour cibler FeedMessage selon la structure du paquet
+    const pb = GtfsRealtimeBindings.transit_realtime || GtfsRealtimeBindings;
+    const feed = pb.FeedMessage.decode(buffer);
 
     const filePath = path.join(process.cwd(), 'alertes.json');
     fs.writeFileSync(filePath, JSON.stringify(feed, null, 2));
-    console.log("Fichier alertes.json mis à jour avec succès avec les vraies données !");
+    console.log("Fichier alertes.json mis à jour avec succès !");
   } catch (error) {
     console.error("Erreur lors de la mise à jour:", error);
     process.exit(1);
