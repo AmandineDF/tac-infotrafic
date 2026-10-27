@@ -22,8 +22,8 @@ def fetch_and_save_alerts():
                     "description": description
                 })
         
-        # Enregistre le fichier alertes.json à la racine du projet
-        with open("alertes.json", "w", encoding="utf-8") as f:
+        # Enregistre le fichier directement dans src/ pour que Parcel l'inclue
+        with open("src/alertes.json", "w", encoding="utf-8") as f:
             json.dump(alerts_list, f, ensure_ascii=False, indent=4)
         print("Fichier alertes.json mis à jour avec succès !")
     else:
