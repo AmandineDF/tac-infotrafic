@@ -24,7 +24,7 @@ def fetch_and_save_alerts():
         
         # Enregistre le fichier alertes.json à la racine du projet
         with open("alertes.json", "w", encoding="utf-8") as f:
-            json.dump(alerts_list, f, ensure_ensure_ascii=False, indent=4)
+            json.dump(alerts_list, f, ensure_ascii=False, indent=4)
         print("Fichier alertes.json mis à jour avec succès !")
     else:
         print(f"Erreur HTTP : {response.status_code}")
