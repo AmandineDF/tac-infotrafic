@@ -4,6 +4,10 @@
         "description": "Ajustements horaires - À compter du lundi 2 novembre 2026, les horaires des lignes T1, 4, 6, 7 et 8 évoluent pour mieux correspondre à vos besoins. Pour consulter les changements et les nouveaux horaires : tac-mobilites.fr"
     },
     {
+        "title": "Ligne 5 Arrêt Hôpital – Desservi le 28/10 et le 29/10",
+        "description": "Arrêt Hôpital – Desservi le 28/10 et le 29/10 sur la ligne 5"
+    },
+    {
         "title": "Arrêt Jean Monnet P+R déplacé.",
         "description": "Ligne 6 dir. Rte de Lucinges et 7 dir. Perrier-Aubrac : La montée et la dépose se fera à l'arrêt situé devant le Lycée. Jusqu'à nouvel avis."
     },
@@ -21,7 +25,7 @@
     },
     {
         "title": "Déviation Ligne 5  – Dir. Hôpital Arrêt non desservi",
-        "description": "Déviation Ligne 5 Arrêt Hôpital non desservi du 28/10 au 29/10. Arrêt report La Paix."
+        "description": "Déviation Ligne 5 Dir. Hôpital Arrêt Baron de Buttet non desservi du 28/10 au 29/10. Arrêt report La Paix."
     },
     {
         "title": "Déviation Ligne T2  – Dir. G. Fossard Arrêt non desservi ",
