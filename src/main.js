@@ -1,7 +1,7 @@
 import alertes from './alertes.json';
 
 document.addEventListener('DOMContentLoaded', () => {
-  const container = document.getElementById('alerts-container');
+  const container = document.getElementById('traffic-alerts');
   if (!container) return;
 
   if (!alertes || alertes.length === 0) {
