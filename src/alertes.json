@@ -1,42 +1,164 @@
 [
     {
         "title": "Ajustements horaires à compter du lundi 2 novembre 2026",
-        "description": "Ajustements horaires - À compter du lundi 2 novembre 2026, les horaires des lignes T1, 4, 6, 7 et 8 évoluent pour mieux correspondre à vos besoins. Pour consulter les changements et les nouveaux horaires : tac-mobilites.fr"
+        "description": "Ajustements horaires - À compter du lundi 2 novembre 2026, les horaires des lignes T1, 4, 6, 7 et 8 évoluent pour mieux correspondre à vos besoins. Pour consulter les changements et les nouveaux horaires : tac-mobilites.fr",
+        "effect": "ADDITIONAL_SERVICE",
+        "cause": "OTHER_CAUSE",
+        "active_periods": [
+            {
+                "start": 1793590200,
+                "end": 1794177900
+            }
+        ],
+        "routes": [
+            "T1",
+            "4",
+            "6",
+            "7",
+            "8"
+        ]
     },
     {
         "title": "Ligne 5 Arrêt Hôpital – Desservi le 28/10 et le 29/10",
-        "description": "Arrêt Hôpital – Desservi le 28/10 et le 29/10 sur la ligne 5"
+        "description": "Arrêt Hôpital – Desservi le 28/10 et le 29/10 sur la ligne 5",
+        "effect": "MODIFIED_SERVICE",
+        "cause": "OTHER_CAUSE",
+        "active_periods": [
+            {
+                "start": 1793176320,
+                "end": 1793313900
+            }
+        ],
+        "routes": [
+            "5"
+        ]
     },
     {
         "title": "Arrêt Jean Monnet P+R déplacé.",
-        "description": "Ligne 6 dir. Rte de Lucinges et 7 dir. Perrier-Aubrac : La montée et la dépose se fera à l'arrêt situé devant le Lycée. Jusqu'à nouvel avis."
+        "description": "Ligne 6 dir. Rte de Lucinges et 7 dir. Perrier-Aubrac : La montée et la dépose se fera à l'arrêt situé devant le Lycée. Jusqu'à nouvel avis.",
+        "effect": "STOP_MOVED",
+        "cause": "OTHER_CAUSE",
+        "active_periods": [
+            {
+                "start": 1788107400,
+                "end": null
+            }
+        ],
+        "routes": [
+            "6",
+            "7"
+        ]
     },
     {
         "title": "Déviation Ligne 8  – Dir. Vétraz-M. Arrêts non desservis",
-        "description": "Déviation Ligne 8 Arrêts Olympe de Gouges (report: Martinière) & Fraternité (report: Campus de l'Étoile) non desservis du 28/10 au 29/10."
+        "description": "Déviation Ligne 8 Arrêts Olympe de Gouges (report: Martinière) & Fraternité (report: Campus de l'Étoile) non desservis du 28/10 au 29/10.",
+        "effect": "DETOUR",
+        "cause": "CONSTRUCTION",
+        "active_periods": [
+            {
+                "start": 1793003400,
+                "end": 1793313900
+            }
+        ],
+        "routes": [
+            "8"
+        ]
     },
     {
         "title": "L5-L6 : arrêt Collège La Géline non desservi",
-        "description": "L5-L6 : arrêt Collège La Géline non desservi. Report à l'arrêt Chemin des Teppes jusqu'à nouvel ordre. Horaires : bit.ly/3vsl1Zo"
+        "description": "L5-L6 : arrêt Collège La Géline non desservi. Report à l'arrêt Chemin des Teppes jusqu'à nouvel ordre. Horaires : bit.ly/3vsl1Zo",
+        "effect": "STOP_MOVED",
+        "cause": "OTHER_CAUSE",
+        "active_periods": [
+            {
+                "start": 1791397800,
+                "end": null
+            }
+        ],
+        "routes": [
+            "6",
+            "5"
+        ]
     },
     {
         "title": "Travaux sur la ligne T2 - Arrêt Gaillard Mairie non desservi",
-        "description": "Travaux - Ligne T2, arrêt Gaillard Mairie non desservi dans les deux sens de circulation jusqu'à nouvel avis. Arrêt de report : Feux-Follets."
+        "description": "Travaux - Ligne T2, arrêt Gaillard Mairie non desservi dans les deux sens de circulation jusqu'à nouvel avis. Arrêt de report : Feux-Follets.",
+        "effect": "DETOUR",
+        "cause": "CONSTRUCTION",
+        "active_periods": [
+            {
+                "start": 1788249600,
+                "end": 1797029100
+            }
+        ],
+        "routes": [
+            "T2"
+        ]
     },
     {
         "title": "Déviation Ligne 5  – Dir. Hôpital Arrêt non desservi",
-        "description": "Déviation Ligne 5 Dir. Hôpital Arrêt Baron de Buttet non desservi du 28/10 au 29/10. Arrêt report La Paix."
+        "description": "Déviation Ligne 5 Dir. Hôpital Arrêt Baron de Buttet non desservi du 28/10 au 29/10. Arrêt report La Paix.",
+        "effect": "DETOUR",
+        "cause": "CONSTRUCTION",
+        "active_periods": [
+            {
+                "start": 1793142900,
+                "end": 1793313900
+            }
+        ],
+        "routes": [
+            "5"
+        ]
     },
     {
         "title": "Déviation Ligne T2  – Dir. G. Fossard Arrêt non desservi ",
-        "description": "Déviation Ligne T2 Arrêt Châtelaine non desservi de 21h à 6h du 28/10 au 30/10. Arrêt report Feux Follets."
+        "description": "Déviation Ligne T2 Arrêt Châtelaine non desservi de 21h à 6h du 28/10 au 30/10. Arrêt report Feux Follets.",
+        "effect": "DETOUR",
+        "cause": "CONSTRUCTION",
+        "active_periods": [
+            {
+                "start": 1793090700,
+                "end": 1793400300
+            }
+        ],
+        "routes": [
+            "T2"
+        ]
     },
     {
         "title": "Vacances Scolaires – du 17/10 au 01/11",
-        "description": "Vacances Scolaires – du 17/10 au 01/11 nos lignes circuleront en horaires du samedi et vacances scolaires. Préparez votre itinéraire bit.ly/3vsl1Zo"
+        "description": "Vacances Scolaires – du 17/10 au 01/11 nos lignes circuleront en horaires du samedi et vacances scolaires. Préparez votre itinéraire bit.ly/3vsl1Zo",
+        "effect": "OTHER_EFFECT",
+        "cause": "OTHER_CAUSE",
+        "active_periods": [
+            {
+                "start": 1792749600,
+                "end": 1793573100
+            }
+        ],
+        "routes": [
+            "T1",
+            "T2",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8"
+        ]
     },
     {
         "title": "Déviation Ligne 8  – Dir. G. Fossard Arrêt non desservi",
-        "description": "Déviation Ligne 8 Arrêt Pont Neuf non desservi le 26/10 et le 28/10. Arrêt report République."
+        "description": "Déviation Ligne 8 Arrêt Pont Neuf non desservi le 26/10 et le 28/10. Arrêt report République.",
+        "effect": "DETOUR",
+        "cause": "CONSTRUCTION",
+        "active_periods": [
+            {
+                "start": 1793003400,
+                "end": 1793227500
+            }
+        ],
+        "routes": [
+            "8"
+        ]
     }
 ]
