@@ -126,3 +126,63 @@ body {
 .picto {
     height: 50%;
 }
+
+.info_disruption {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.effect {
+    height: 54px;
+    padding-right: 20px;
+    border-radius: 12px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.effect > p {
+    font-size: 18pt;
+    font-family: 'CorporativeSans Rd Bold', Arial, sans-serif;
+    margin: 0;
+}
+
+.dates {
+    height: 54px;
+    background-color: #0058941a;
+    border-radius: 12px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    color: #005894;
+    padding-right: 15px;
+}
+
+.icon_container {
+    width: 54px;
+    height: 100%;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.date {
+    font-family: 'CorporativeSans Rd Bold', Arial, sans-serif;
+    font-size: 14pt;
+}
+
+.disruptionTitle {
+    font-family: 'CorporativeSans Rd Bold', Arial, sans-serif;
+    font-size: 28pt;
+    margin-bottom: 12px;
+    color: #001E32;
+}
+
+.disruptionText {
+    font-size: 18pt;
+    line-height: 140%;
+    color: #333;
+}
