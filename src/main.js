@@ -1,4 +1,4 @@
-import alertesUrl from '../src/alertes.json' assert { type: 'json' };
+import alertesUrl from 'url:./alertes.json';
 
 fetch(alertesUrl)
   .then(response => {
