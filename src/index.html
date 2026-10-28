@@ -7,23 +7,17 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>TAC Mobilités - Info Trafic</h1>
-    <p>Réseau de transports de l'Agglomération d'Annemasse</p>
-  </header>
-
-  <main>
-    <section class="alert-banner">
-      <h2>En direct sur le réseau</h2>
-      <div id="traffic-alerts">
-        <!-- Les alertes s'afficheront ici -->
+  <div class="side_title">
+      <div class="info_trafic">
+          <h1>Info trafic</h1>
       </div>
-    </section>
-  </main>
+  </div>
 
-  <footer>
-    <p>&copy; 2026 Info Trafic TAC Mobilités</p>
-  </footer>
+  <div class="slider">
+      <div class="cards" id="traffic-alerts">
+          <!-- Les cartes d'alerte seront injectées ici par main.js -->
+      </div>
+  </div>
 
   <script type="module" src="main.js"></script>
 </body>

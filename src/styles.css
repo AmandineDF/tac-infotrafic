@@ -1,50 +1,128 @@
+@font-face {
+    font-family: 'CorporativeSans Rd Regular';
+    src: url('/assets/font/regular.otf');
+}
+@font-face {
+    font-family: 'CorporativeSans Rd Bold';
+    src: url('/assets/font/bold.otf');
+}
+
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f6f8;
-  color: #333;
+    background-color: #001E32;
+    display: flex;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
 }
 
-header {
-  background-color: #008080; /* Couleur d'exemple */
-  color: white;
-  padding: 20px;
-  text-align: center;
+.side_title {
+    height: 100vh;
+    width: 150px;
+    background-color: #002c49;
+    flex-shrink: 0;
 }
 
-main {
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 0 15px;
+.info_trafic {
+    transform: rotate(-90deg);
+    width: 150px;
+    position: relative;
+    top: 250px;
 }
 
-.alert-banner {
-  background: white;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+.side_title h1 {
+    color: #f0f0f0;
+    font-size: 54pt;
+    width: 800px;
+    transform: translateX(-350px);
+    font-family: 'CorporativeSans Rd Bold', Arial, sans-serif;
+    text-transform: uppercase;
 }
 
-.alert-card {
-  border-left: 4px solid #e74c3c;
-  background-color: #fdf2f2;
-  padding: 12px 16px;
-  margin-bottom: 12px;
-  border-radius: 4px;
+.slider {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
 }
 
-.alert-card.info {
-  border-left-color: #3498db;
-  background-color: #ebf5fb;
+.cards {
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
-.line-badge {
-  display: inline-block;
-  background: #333;
-  color: #fff;
-  padding: 2px 8px;
-  border-radius: 4px;
-  font-weight: bold;
-  font-size: 0.9em;
+.card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% - 96px);
+    height: calc(100% - 96px);
+    padding: 24px;
+    margin: 48px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border-radius: 32px;
+    text-align: left;
+    font-family: 'CorporativeSans Rd Regular', Arial, sans-serif;
+    white-space: normal;
+    opacity: 0;
+    transition: opacity 500ms ease-in-out;
+    pointer-events: none;
+}
+
+.card.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.info_disruption {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.disruptionTitle {
+    font-family: 'CorporativeSans Rd Bold', Arial, sans-serif;
+    font-size: 36pt;
+    margin-bottom: 16px;
+    color: #001E32;
+}
+
+.disruptionText {
+    font-size: 20pt;
+    line-height: 140%;
+    color: #333;
+}
+
+.effect {
+    height: 64px;
+    padding-right: 24px;
+    border-radius: 12px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    background-color: #ff93001a;
+}
+
+.effect > p {
+    font-size: 22pt;
+    font-family: 'CorporativeSans Rd Bold', Arial, sans-serif;
+    margin: 0;
+    color: #ff9300;
+}
+
+.icon_container {
+    background-color: #ff9300;
+    width: 64px;
+    height: 100%;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.picto {
+    height: 50%;
 }
