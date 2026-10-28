@@ -1,6 +1,6 @@
 import alertes from './alertes.json';
 
-// Dictionnaire pour traduire les effets en français
+// Dictionnaire de traduction des effets
 const effectTranslate = {
     STOP_MOVED: "Arrêt déplacé",
     DETOUR: "Ligne déviée",
@@ -12,17 +12,17 @@ const effectTranslate = {
     OTHER_EFFECT: "Information importante"
 };
 
-// Couleurs associées selon l'effet
+// Couleurs associées
 const effectColors = {
-    SIGNIFICANT_DELAYS: "#bb2124", // Rouge alerte
+    SIGNIFICANT_DELAYS: "#bb2124",
     NO_SERVICE: "#bb2124",
-    DIVERSION: "#ff9300",          // Orange attention
+    DIVERSION: "#ff9300",
     DETOUR: "#ff9300",
     STOP_MOVED: "#ff9300",
-    DEFAULT: "#005894"             // Bleu info
+    DEFAULT: "#005894"
 };
 
-// Fonction pour formater les timestamps UNIX renvoyés par Python
+// Formatage des dates UNIX
 function formatTimestamp(timestamp) {
     if (!timestamp) return "";
     const date = new Date(timestamp * 1000);
@@ -42,6 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const container = document.getElementById('traffic-alerts');
   if (!container) return;
 
+  // Si aucune alerte
   if (!alertes || alertes.length === 0) {
     container.innerHTML = `
       <div class="card active">
@@ -54,16 +55,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
   container.innerHTML = "";
 
+  // Création des cartes
   alertes.forEach((alert, index) => {
     const card = document.createElement('div');
     card.className = `card ${index === 0 ? 'active' : ''}`;
 
-    // Gestion de l'effet et de la couleur
     const effectKey = alert.effect || "OTHER_EFFECT";
     const effectText = effectTranslate[effectKey] || "Information réseau";
     const effectColor = effectColors[effectKey] || effectColors.DEFAULT;
 
-    // Gestion des dates de début / fin si présentes
+    // Gestion des dates
     let datesHtml = "";
     if (alert.active_periods && alert.active_periods.length > 0) {
       const period = alert.active_periods[0];
@@ -72,32 +73,24 @@ document.addEventListener('DOMContentLoaded', () => {
       if (startFormatted || endFormatted) {
         datesHtml = `
           <div class="dates">
-              <div class="icon_container" style="background-color: ${effectColor};">
-                  <span style="color:white; font-size: 14pt;">📅</span>
-              </div>
+              <div class="icon_container" style="background-color: ${effectColor};">📅</div>
               <div class="date">Du ${startFormatted || 'N/C'} au ${endFormatted || 'N/C'}</div>
           </div>
         `;
       }
     }
 
-    // Gestion des lignes impactées (badges de lignes)
+    // Gestion des lignes
     let routesHtml = "";
     if (alert.routes && alert.routes.length > 0) {
-      const badges = alert.routes.map(r => `<div class="line" style="background-color: #222; color: #fff; padding: 4px 10px; border-radius: 4px; display:inline-block; margin-right:5px;">Ligne ${r}</div>`).join('');
-      routesHtml = `
-        <div class="lines-container" style="margin-bottom: 16px;">
-            ${badges}
-        </div>
-      `;
+      const badges = alert.routes.map(r => `<div class="line" style="background-color: #222; color: #fff; display:inline-block; margin-right:5px;">Ligne ${r}</div>`).join('');
+      routesHtml = `<div class="lines-container" style="margin-bottom: 16px;">${badges}</div>`;
     }
 
     card.innerHTML = `
         <div class="info_disruption">
             <div class="effect" style="background-color: ${effectColor}1a;">
-                <div class="icon_container" style="background-color: ${effectColor};">
-                    <span style="color:white; font-weight:bold;">⚠️</span>
-                </div>
+                <div class="icon_container" style="background-color: ${effectColor};">⚠️</div>
                 <p style="color: ${effectColor};">${effectText}</p>
             </div>
             ${datesHtml}
@@ -111,7 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
     container.appendChild(card);
   });
 
-  // Système de carrousel (rotation automatique des cartes)
+  // Carrousel automatique si plusieurs cartes
   const cards = container.querySelectorAll('.card');
   if (cards.length > 1) {
     let currentIndex = 0;
@@ -119,6 +112,6 @@ document.addEventListener('DOMContentLoaded', () => {
       cards[currentIndex].classList.remove('active');
       currentIndex = (currentIndex + 1) % cards.length;
       cards[currentIndex].classList.add('active');
-    }, 7000); // Change toutes les 7 secondes
+    }, 7000);
   }
 });
