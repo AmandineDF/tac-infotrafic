@@ -50,6 +50,21 @@
         ]
     },
     {
+        "title": "Circulation dense - Ligne T2 retard à prévoir",
+        "description": "Circulation dense - Ligne T2 Retard à prévoir dans les 2 sens de circulation. Horaires en direct sur bit.ly/3vsl1Zo.",
+        "effect": "SIGNIFICANT_DELAYS",
+        "cause": "OTHER_CAUSE",
+        "active_periods": [
+            {
+                "start": 1793207940,
+                "end": null
+            }
+        ],
+        "routes": [
+            "T2"
+        ]
+    },
+    {
         "title": "Déviation Ligne 8  – Dir. Vétraz-M. Arrêts non desservis",
         "description": "Déviation Ligne 8 Arrêts Olympe de Gouges (report: Martinière) & Fraternité (report: Campus de l'Étoile) non desservis du 28/10 au 29/10.",
         "effect": "DETOUR",
