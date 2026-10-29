@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'CorporativeSans Rd Regular';
+    src: url('../../assets/font/regular.otf');
+}
+@font-face {
+    font-family: 'CorporativeSans Rd Bold';
+    src: url('../../assets/font/bold.otf');
+}
+
+:root {
+    /* --- COULEURS ET POLICES --- */
+    --bg-main: #001E32;
+    --bg-sidebar: #002c49;
+    --card-bg: #ffffff;
+    --text-color: #333333;
+    
+    --font-reg: 'CorporativeSans Rd Regular', Arial, sans-serif;
+    --font-bold: 'CorporativeSans Rd Bold', Arial, sans-serif;
+
+    /* --- ÉCHELLE TYPOGRAPHIQUE (Basée sur 8px / proportionnelle) --- */
+    --font-size-xs: 0.875rem;   /* ~14px */
+    --font-size-sm: 1rem;       /* ~16px */
+    --font-size-base: 1.125rem; /* ~18px */
+    --font-size-md: 1.25rem;    /* ~20px */
+    --font-size-lg: 1.5rem;     /* ~24px */
+    --font-size-xl: 2rem;       /* ~32px */
+    --font-size-xxl: 2.8rem;    /* ~45px (Titre sidebar desktop) */
+
+    /* --- ESPACEMENTS ET TAILLES (Système de base 8) --- */
+    --space-0-5: 0.25rem; /* 4px  (Demi-unité) */
+    --space-1: 0.5rem;    /* 8px  (1 unité) */
+    --space-2: 1rem;      /* 16px (2 unités) */
+    --space-3: 1.5rem;    /* 24px (3 unités) */
+    --space-4: 2rem;      /* 32px (4 unités) */
+    --space-5: 2.5rem;    /* 40px (5 unités) */
+    --space-6: 3rem;      /* 48px (6 unités) */
+
+    /* --- RADIUS (Arrondis basés sur la grille) --- */
+    --radius-sm: 0.5rem;  /* 8px */
+    --radius-md: 1rem;    /* 16px */
+    --radius-lg: 1.5rem;  /* 24px */
+}

@@ -1,11 +1,11 @@
 /* --- POLICES --- */
 @font-face {
     font-family: 'CorporativeSans Rd Regular';
-    src: url('assets/font/regular.otf');
+    src: url('/assets/font/regular.otf');
 }
 @font-face {
     font-family: 'CorporativeSans Rd Bold';
-    src: url('assets/font/bold.otf');
+    src: url('/assets/font/bold.otf');
 }
 
 /* --- STRUCTURE GÉNÉRALE --- */
