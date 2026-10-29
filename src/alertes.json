@@ -19,21 +19,6 @@
         ]
     },
     {
-        "title": "Ligne 5 Arrêt Hôpital – Desservi le 28/10 et le 29/10",
-        "description": "Arrêt Hôpital – Desservi le 28/10 et le 29/10 sur la ligne 5",
-        "effect": "MODIFIED_SERVICE",
-        "cause": "OTHER_CAUSE",
-        "active_periods": [
-            {
-                "start": 1793176320,
-                "end": 1793313900
-            }
-        ],
-        "routes": [
-            "5"
-        ]
-    },
-    {
         "title": "Arrêt Jean Monnet P+R déplacé.",
         "description": "Ligne 6 dir. Rte de Lucinges et 7 dir. Perrier-Aubrac : La montée et la dépose se fera à l'arrêt situé devant le Lycée. Jusqu'à nouvel avis.",
         "effect": "STOP_MOVED",
@@ -47,21 +32,6 @@
         "routes": [
             "6",
             "7"
-        ]
-    },
-    {
-        "title": "Déviation Ligne 8  – Dir. Vétraz-M. Arrêts non desservis",
-        "description": "Déviation Ligne 8 Arrêts Olympe de Gouges (report: Martinière) & Fraternité (report: Campus de l'Étoile) non desservis du 28/10 au 29/10.",
-        "effect": "DETOUR",
-        "cause": "CONSTRUCTION",
-        "active_periods": [
-            {
-                "start": 1793003400,
-                "end": 1793313900
-            }
-        ],
-        "routes": [
-            "8"
         ]
     },
     {
@@ -93,21 +63,6 @@
         ],
         "routes": [
             "T2"
-        ]
-    },
-    {
-        "title": "Déviation Ligne 5  – Dir. Hôpital Arrêt non desservi",
-        "description": "Déviation Ligne 5 Dir. Hôpital Arrêt Baron de Buttet non desservi du 28/10 au 29/10. Arrêt report La Paix.",
-        "effect": "DETOUR",
-        "cause": "CONSTRUCTION",
-        "active_periods": [
-            {
-                "start": 1793142900,
-                "end": 1793313900
-            }
-        ],
-        "routes": [
-            "5"
         ]
     },
     {
