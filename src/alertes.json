@@ -85,5 +85,20 @@
             "7",
             "8"
         ]
+    },
+    {
+        "title": "Déviation Ligne 5  – Arrêt Barbusse non desservi ",
+        "description": "Déviation Ligne 5  – Arrêt Barbusse non desservi dans les 2 sens le 31/10 dès 19h jusqu'à fin de service. Arrêt report Romagny.",
+        "effect": "DETOUR",
+        "cause": "DEMONSTRATION",
+        "active_periods": [
+            {
+                "start": 1793443200,
+                "end": 1793486700
+            }
+        ],
+        "routes": [
+            "5"
+        ]
     }
 ]
