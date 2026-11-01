@@ -35,21 +35,6 @@
         ]
     },
     {
-        "title": "Manifestations - Ligne 7 Perturbations à prévoir",
-        "description": "Manifestation - Ligne 7 arrêts Livron De Gaulle à Perrier-Aubrac non desservis non desservis dans les 2 sens à partir de 19h15.   ",
-        "effect": "DETOUR",
-        "cause": "DEMONSTRATION",
-        "active_periods": [
-            {
-                "start": 1793464252,
-                "end": 1793486700
-            }
-        ],
-        "routes": [
-            "7"
-        ]
-    },
-    {
         "title": "L5-L6 : arrêt Collège La Géline non desservi",
         "description": "L5-L6 : arrêt Collège La Géline non desservi. Report à l'arrêt Chemin des Teppes jusqu'à nouvel ordre. Horaires : bit.ly/3vsl1Zo",
         "effect": "STOP_MOVED",
@@ -81,36 +66,6 @@
         ]
     },
     {
-        "title": "Manifestions - Perturbations à prévoir",
-        "description": "Manifestation - Ligne T1 : arrêts Lycée des Glières, Verdun, Léman et Jean Monnet P+R non desservis à partir de 19h samedi 31 octobre. ",
-        "effect": "REDUCED_SERVICE",
-        "cause": "DEMONSTRATION",
-        "active_periods": [
-            {
-                "start": 1793465333,
-                "end": 1793486700
-            }
-        ],
-        "routes": [
-            "T1"
-        ]
-    },
-    {
-        "title": "Manifestation - Ligne 8 perturbation à prévoir",
-        "description": "Manifestation - Ligne 8 arrêts Europe et Jean Monnet P+R non desservis à partir de 19h. ",
-        "effect": "REDUCED_SERVICE",
-        "cause": "DEMONSTRATION",
-        "active_periods": [
-            {
-                "start": 1793465334,
-                "end": 1793486700
-            }
-        ],
-        "routes": [
-            "8"
-        ]
-    },
-    {
         "title": "Vacances Scolaires – du 17/10 au 01/11",
         "description": "Vacances Scolaires – du 17/10 au 01/11 nos lignes circuleront en horaires du samedi et vacances scolaires. Préparez votre itinéraire bit.ly/3vsl1Zo",
         "effect": "OTHER_EFFECT",
@@ -129,21 +84,6 @@
             "6",
             "7",
             "8"
-        ]
-    },
-    {
-        "title": "Déviation Ligne 5  – Arrêt Barbusse non desservi ",
-        "description": "Déviation Ligne 5  – Arrêt Barbusse non desservi dans les 2 sens le 31/10 dès 19h jusqu'à fin de service. Arrêt report Romagny.",
-        "effect": "DETOUR",
-        "cause": "DEMONSTRATION",
-        "active_periods": [
-            {
-                "start": 1793443200,
-                "end": 1793486700
-            }
-        ],
-        "routes": [
-            "5"
         ]
     }
 ]
