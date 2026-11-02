@@ -35,6 +35,23 @@
         ]
     },
     {
+        "title": "Circulation dense – retard à prévoir",
+        "description": "Circulation dense – Lignes T1, T2 et 4, retard à prévoir. Horaires en direct bit.ly/3vsl1Zo",
+        "effect": "SIGNIFICANT_DELAYS",
+        "cause": "OTHER_CAUSE",
+        "active_periods": [
+            {
+                "start": 1793637420,
+                "end": 1793659500
+            }
+        ],
+        "routes": [
+            "T2",
+            "T1",
+            "4"
+        ]
+    },
+    {
         "title": "L5-L6 : arrêt Collège La Géline non desservi",
         "description": "L5-L6 : arrêt Collège La Géline non desservi. Report à l'arrêt Chemin des Teppes jusqu'à nouvel ordre. Horaires : bit.ly/3vsl1Zo",
         "effect": "STOP_MOVED",
@@ -59,6 +76,21 @@
             {
                 "start": 1788249600,
                 "end": 1797029100
+            }
+        ],
+        "routes": [
+            "T2"
+        ]
+    },
+    {
+        "title": "Circulation dense – Arrêts non desservis",
+        "description": "Circulation dense – Ligne T2, départ de Pres-des-Plans à 18h16, arrêts de Pres-des-Plans à Annemasse Gare non desservis. Horaires en direct bit.ly/3vsl1Zo",
+        "effect": "REDUCED_SERVICE",
+        "cause": "OTHER_CAUSE",
+        "active_periods": [
+            {
+                "start": 1793641500,
+                "end": 1793651400
             }
         ],
         "routes": [
