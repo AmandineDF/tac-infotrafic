@@ -1,5 +1,5 @@
 /* ==========================================================================
-   COMPOSANT : CARD (Effet "Stack" multi-cartes visibles en dessous - Hauteur contrôlée)
+   COMPOSANT : CARD
    ========================================================================== */
 
 
@@ -29,7 +29,7 @@
                 box-shadow 600ms cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* La carte active (au premier plan) */
+/* Carte active (au 1er plan) */
 .card--active {
     transform: translateY(0) scale(1);
     box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
@@ -37,21 +37,18 @@
     z-index: 10;
 }
 
-/* --- EFFET DE PILE PROGRESSIF POUR LES CARTES SUIVANTES --- */
-/* La 1ère carte juste en dessous de l'active */
+/* --- PILE PROGRESSIF POUR LES CARTES SUIVANTES --- */
 .card--active + .card {
     transform: translateY(24px) scale(0.96);
     z-index: 5;
 }
 
-/* La 2ème carte en dessous (encore plus bas et plus petite) */
 .card--active + .card + .card {
     transform: translateY(48px) scale(0.92);
     z-index: 2;
 }
 
 /* --- ANIMATION EN CASCADE EXPLICITE DES ÉLÉMENTS INTERNES --- */
-/* 1. État masqué par défaut */
 .card:not(.card--active) .card__header,
 .card:not(.card--active) .card__dates,
 .card:not(.card--active) .card__body {
@@ -59,7 +56,6 @@
     transform: translateY(15px);
 }
 
-/* 2. Apparition en cascade lorsque la carte est active */
 .card.card--active .card__header {
     opacity: 1;
     transform: translateY(0);
@@ -155,7 +151,7 @@
     display: flex;
     flex-direction: column;
     gap: var(--space-1);
-    overflow-y: auto; /* Permet de scroller si le texte dépasse de la hauteur de la carte */
+    overflow-y: auto; /* Scroller si le texte dépasse de la hauteur de la carte */
     width: 100%;
     flex: 1;
 }
@@ -175,7 +171,7 @@
     margin: 0;
 }
 
-/* --- ADAPTATION MOBILE (Plein écran si besoin) --- */
+/* --- RESPONSIVE --- */
 @media (max-width: 768px) {
     .slider__container {
       height: 80vh;

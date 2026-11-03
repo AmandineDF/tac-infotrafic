@@ -15,18 +15,17 @@ def fetch_and_save_alerts():
             if entity.HasField('alert'):
                 alert = entity.alert
                 
-                # Titre et description (avec replis sécurisés)
+                # Titre et description
                 header = alert.header_text.translation[0].text if alert.header_text.translation else "Information réseau"
                 description = alert.description_text.translation[0].text if alert.description_text.translation else ""
                 
-                # Effet (ex: DIVERSION, SIGNIFICANT_DELAYS, NO_SERVICE...)
-                # On convertit l'énumération protobuf en texte lisible
+                # Impacts (ex: DIVERSION, SIGNIFICANT_DELAYS, NO_SERVICE...)
                 effect = gtfs_realtime_pb2.Alert.Effect.Name(alert.effect) if hasattr(alert, 'effect') else "OTHER"
                 
                 # Cause de l'alerte (ex: WORKS, STRIKE...)
                 cause = gtfs_realtime_pb2.Alert.Cause.Name(alert.cause) if hasattr(alert, 'cause') else "UNKNOWN_CAUSE"
                 
-                # Périodes de validité (dates de début et de fin)
+                # Dates de validité
                 periods = []
                 for period in alert.active_period:
                     periods.append({
@@ -52,7 +51,7 @@ def fetch_and_save_alerts():
         # Enregistre le tout dans src/alertes.json
         with open("src/alertes.json", "w", encoding="utf-8") as f:
             json.dump(alerts_list, f, ensure_ascii=False, indent=4)
-        print("Fichier alertes.json mis à jour avec les détails enrichis !")
+        print("Fichier alertes.json mis à jour !")
     else:
         print(f"Erreur HTTP : {response.status_code}")
 

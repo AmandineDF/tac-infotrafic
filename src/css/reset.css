@@ -1,15 +1,13 @@
 /* ==========================================================================
-   CSS RESET MODERNE
+   CSS RESET
    ========================================================================== */
 
-/* 1. Utilisation d'un box-sizing global et suppression des marges par défaut */
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/* 2. Amélioration des paramètres de base du document */
 html {
     -webkit-text-size-adjust: 100%;
 }
@@ -20,23 +18,19 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-/* 3. Normalisation des éléments médias */
 img, picture, video, canvas, svg {
     display: block;
     max-width: 100%;
 }
 
-/* 4. Les formulaires héritent de la police parente */
 input, button, textarea, select {
     font: inherit;
 }
 
-/* 5. Suppression des puces de listes par défaut */
 ul, ol {
     list-style: none;
 }
 
-/* 6. Liens propres par défaut */
 a {
     text-decoration: none;
     color: inherit;

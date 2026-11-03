@@ -1,4 +1,4 @@
-// Dictionnaire de traduction des impacts GTFS-RT
+// Traduction des impacts GTFS-RT
 export const effectTranslate = {
     STOP_MOVED: "Arrêt déplacé",
     DETOUR: "Déviation",
