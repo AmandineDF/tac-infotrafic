@@ -2,8 +2,8 @@ name: Update GTFS Alerts
 
 on:
   schedule:
-    - cron: '*/30 * * * *' # S'exécute toutes les 30 minutes
-  workflow_dispatch: # Permet de le lancer manuellement depuis l'onglet Actions de GitHub
+    - cron: '*/30 * * * *'
+  workflow_dispatch: # Permet de lancer manuellement
 
 jobs:
   update-data:
@@ -30,3 +30,7 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.io"
           git add src/alertes.json
           git diff --quiet && git diff --staged --quiet || (git commit -m "Mise à jour automatique des alertes transport [skip ci]" && git push)
+
+      - name: Trigger Netlify Deploy
+        run: |
+          curl -X POST "https://api.netlify.com/build_hooks/6ae9dfc63d091f844bf3e5ab"
