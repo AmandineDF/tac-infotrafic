@@ -145,6 +145,9 @@
     font-family: var(--font-bold);
     font-size: var(--font-size-lg);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 88px;
+    width: 88px;
+    text-align: center;
 }
 
 .card__body {
