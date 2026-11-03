@@ -64,5 +64,20 @@
         "routes": [
             "T2"
         ]
+    },
+    {
+        "title": "Incident d'exploitation – retard à prévoir",
+        "description": "Incident d'exploitation – Ligne 6, départ de Route de Lucinges à 16h05, retard de 10 minutes à prévoir. Horaires en direct bit.ly/3vsl1Zo",
+        "effect": "REDUCED_SERVICE",
+        "cause": "OTHER_CAUSE",
+        "active_periods": [
+            {
+                "start": 1793718300,
+                "end": 1793728800
+            }
+        ],
+        "routes": [
+            "6"
+        ]
     }
 ]
