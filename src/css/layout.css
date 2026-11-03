@@ -17,7 +17,7 @@ body {
    COMPOSANT : SIDEBAR
    ========================================================================== */
 .sidebar {
-    width: 120px;
+    width: 200px;
     height: 100vh;
     background-color: var(--bg-sidebar);
     flex-shrink: 0;
