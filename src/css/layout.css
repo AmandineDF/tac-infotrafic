@@ -93,6 +93,6 @@ body {
     }
 
     .slider {
-        height: calc(100vh - 70px);
+        height: calc(100vh - 150px);
     }
 }
