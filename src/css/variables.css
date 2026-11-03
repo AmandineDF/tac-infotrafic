@@ -18,13 +18,13 @@
     --font-bold: 'CorporativeSans Rd Bold', Arial, sans-serif;
 
     /* --- ÉCHELLE TYPOGRAPHIQUE (base 8) --- */
-    --font-size-xs: 1.75rem;   /* ~28px */
-    --font-size-sm: 2rem;      /* ~32px */
-    --font-size-base: 2.25rem; /* ~36px */
-    --font-size-md: 2.5rem;    /* ~40px */
-    --font-size-lg: 3rem;      /* ~48px */
-    --font-size-xl: 4rem;      /* ~64px */
-    --font-size-xxl: 5.6rem;   /* ~90px */
+    --font-size-xs: 2.1875rem; /* ~35px */
+    --font-size-sm: 2.5rem;    /* ~40px */
+    --font-size-base: 2.8125rem;/* ~45px */
+    --font-size-md: 3.125rem;  /* ~50px */
+    --font-size-lg: 3.75rem;   /* ~60px */
+    --font-size-xl: 5rem;      /* ~80px */
+    --font-size-xxl: 7rem;     /* ~112px */
 
     /* --- ESPACEMENTS ET TAILLES (base 8) --- */
     --space-0-5: 0.25rem; /* 4px  (Demi-unité) */
