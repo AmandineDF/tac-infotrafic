@@ -35,21 +35,6 @@
         ]
     },
     {
-        "title": "Incident d'exploitation - Retard à prévoir",
-        "description": "Incident d'exploitation – Ligne 4, départ de Annemasse Gare à 13h50, retard à prévoir. Horaires en direct bit.ly/3vsl1Zo",
-        "effect": "SIGNIFICANT_DELAYS",
-        "cause": "TECHNICAL_PROBLEM",
-        "active_periods": [
-            {
-                "start": 1793883780,
-                "end": 1793890800
-            }
-        ],
-        "routes": [
-            "4"
-        ]
-    },
-    {
         "title": "L5-L6 : arrêt Collège La Géline non desservi",
         "description": "L5-L6 : arrêt Collège La Géline non desservi. Report à l'arrêt Chemin des Teppes jusqu'à nouvel ordre. Horaires : bit.ly/3vsl1Zo",
         "effect": "STOP_MOVED",
