@@ -19,21 +19,6 @@
         ]
     },
     {
-        "title": "Agression conducteur – retard à prévoir",
-        "description": "Agression conducteur – Ligne 5, départ de Hôpital CHAL à 16h23, retard à prévoir. Horaires en direct bit.ly/3vsl1Zo",
-        "effect": "SIGNIFICANT_DELAYS",
-        "cause": "OTHER_CAUSE",
-        "active_periods": [
-            {
-                "start": 1793978880,
-                "end": 1793986200
-            }
-        ],
-        "routes": [
-            "5"
-        ]
-    },
-    {
         "title": "Arrêt Jean Monnet P+R déplacé.",
         "description": "Ligne 6 dir. Rte de Lucinges et 7 dir. Perrier-Aubrac : La montée et la dépose se fera à l'arrêt situé devant le Lycée. Jusqu'à nouvel avis.",
         "effect": "STOP_MOVED",
