@@ -35,6 +35,21 @@
         ]
     },
     {
+        "title": "Maintenance annuelle - Téléphérique du Salève non desservi",
+        "description": "Maintenance annuelle du Téléphérique - L'arrêt Téléphérique du Salève ne sera pas desservi du 8 au 22 novembre dans les deux sens de circulation.",
+        "effect": "DETOUR",
+        "cause": "MAINTENANCE",
+        "active_periods": [
+            {
+                "start": 1794049680,
+                "end": 1795387500
+            }
+        ],
+        "routes": [
+            "4"
+        ]
+    },
+    {
         "title": "L5-L6 : arrêt Collège La Géline non desservi",
         "description": "L5-L6 : arrêt Collège La Géline non desservi. Report à l'arrêt Chemin des Teppes jusqu'à nouvel ordre. Horaires : bit.ly/3vsl1Zo",
         "effect": "STOP_MOVED",
