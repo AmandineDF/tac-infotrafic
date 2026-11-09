@@ -1,5 +1,20 @@
 [
     {
+        "title": "Incident d'exploitation - retard à prévoir ",
+        "description": "Incident d'exploitation – Ligne 7, départ de Perrier-Aubrac à 7h11, retard à prévoir. Horaires en direct bit.ly/3vsl1Zo",
+        "effect": "SIGNIFICANT_DELAYS",
+        "cause": "TECHNICAL_PROBLEM",
+        "active_periods": [
+            {
+                "start": 1794205140,
+                "end": 1794213000
+            }
+        ],
+        "routes": [
+            "7"
+        ]
+    },
+    {
         "title": "Arrêt Jean Monnet P+R déplacé.",
         "description": "Ligne 6 dir. Rte de Lucinges et 7 dir. Perrier-Aubrac : La montée et la dépose se fera à l'arrêt situé devant le Lycée. Jusqu'à nouvel avis.",
         "effect": "STOP_MOVED",
@@ -55,6 +70,21 @@
             {
                 "start": 1788249600,
                 "end": 1797029100
+            }
+        ],
+        "routes": [
+            "T2"
+        ]
+    },
+    {
+        "title": "Incident d'exploitation– course supprimée",
+        "description": "Incident d'exploitation – Ligne T2, départ de Gaillard Fossard à 7h17 supprimé. Prochain départ : 7h28. Horaires en direct bit.ly/3vsl1Zo",
+        "effect": "REDUCED_SERVICE",
+        "cause": "TECHNICAL_PROBLEM",
+        "active_periods": [
+            {
+                "start": 1794204960,
+                "end": 1794212100
             }
         ],
         "routes": [
