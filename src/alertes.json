@@ -1,5 +1,57 @@
 [
     {
+        "title": "Circulation dense – retard à prévoir",
+        "description": "Circulation dense – Départ de 16h31 de Prés des plans : Arrêts non desservis entre Chatelaine et Gaillard Fossard. Horaires en direct bit.ly/3vsl1Zo",
+        "effect": "REDUCED_SERVICE",
+        "cause": "OTHER_CAUSE",
+        "active_periods": [
+            {
+                "start": 1794327300,
+                "end": 1794332700
+            }
+        ],
+        "routes": [
+            "T2"
+        ]
+    },
+    {
+        "title": "Circulation dense – retard à prévoir",
+        "description": "Circulation dense – Retard lignes 5 et 8. 15 min à prévoir dans les 2 sens. Horaires en direct bit.ly/3vsl1Zo",
+        "effect": "SIGNIFICANT_DELAYS",
+        "cause": "OTHER_CAUSE",
+        "active_periods": [
+            {
+                "start": 1794327300,
+                "end": 1794334500
+            }
+        ],
+        "routes": [
+            "5",
+            "8"
+        ]
+    },
+    {
+        "title": "Circulation dense - Retard à prévoir sur le réseau",
+        "description": "Circulation dense - Retard à prévoir sur l'ensemble du réseau. ",
+        "effect": "SIGNIFICANT_DELAYS",
+        "cause": "OTHER_CAUSE",
+        "active_periods": [
+            {
+                "start": 1794326400,
+                "end": 1794337200
+            }
+        ],
+        "routes": [
+            "T1",
+            "T2",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8"
+        ]
+    },
+    {
         "title": "Arrêt Jean Monnet P+R déplacé.",
         "description": "Ligne 6 dir. Rte de Lucinges et 7 dir. Perrier-Aubrac : La montée et la dépose se fera à l'arrêt situé devant le Lycée. Jusqu'à nouvel avis.",
         "effect": "STOP_MOVED",
@@ -59,6 +111,68 @@
         ],
         "routes": [
             "T2"
+        ]
+    },
+    {
+        "title": "Circulation dense – retard à prévoir",
+        "description": "Circulation dense – Ligne T2, retard de 20 min à prévoir dans les deux sens. Horaires en direct bit.ly/3vsl1Zo",
+        "effect": "SIGNIFICANT_DELAYS",
+        "cause": "OTHER_CAUSE",
+        "active_periods": [
+            {
+                "start": 1794326519,
+                "end": 1794332700
+            }
+        ],
+        "routes": [
+            "T2"
+        ]
+    },
+    {
+        "title": "Circulation dense – Ligne T2 : Arrêts non desservis",
+        "description": "Circulation dense – Ligne T2 départ de Gaillard Fossard de 17h12 : Arrêts non desservis entre G.Fossard/Chatelaine. Horaires en direct bit.ly/3vsl1Zo",
+        "effect": "REDUCED_SERVICE",
+        "cause": "OTHER_CAUSE",
+        "active_periods": [
+            {
+                "start": 1794326400,
+                "end": 1794332700
+            }
+        ],
+        "routes": [
+            "T2"
+        ]
+    },
+    {
+        "title": "Incident d'exploitation - Arrêts non desservis",
+        "description": "Incident d'exploitation – Ligne 8, départ de 17h30 de Vétraz, arrêts non desservis entre Vétraz et Gare Annemasse. Horaires en direct bit.ly/3vsl1Zo",
+        "effect": "SIGNIFICANT_DELAYS",
+        "cause": "OTHER_CAUSE",
+        "active_periods": [
+            {
+                "start": 1794328200,
+                "end": 1794332700
+            }
+        ],
+        "routes": [
+            "8"
+        ]
+    },
+    {
+        "title": "Jour férié – le 11/11/2026",
+        "description": "Jour férié – le 10/04, seules les lignes TANGO, 6 et TAD CHAL (sur réservation uniquement), ainsi que le tramway 17 circuleront. Préparez votre itinéraire bit.ly/3vsl1Zo",
+        "effect": "REDUCED_SERVICE",
+        "cause": "HOLIDAY",
+        "active_periods": [
+            {
+                "start": 1794368700,
+                "end": 1794437100
+            }
+        ],
+        "routes": [
+            "T1",
+            "T2",
+            "4"
         ]
     }
 ]
