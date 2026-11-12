@@ -1,5 +1,20 @@
 [
     {
+        "title": "Circulation dense – retard à prévoir",
+        "description": "Circulation dense – retard à prévoir : ligne T2 dans les 2 sens. Horaires en direct bit.ly/3vsl1Zo",
+        "effect": "SIGNIFICANT_DELAYS",
+        "cause": "OTHER_CAUSE",
+        "active_periods": [
+            {
+                "start": 1794466080,
+                "end": 1794469500
+            }
+        ],
+        "routes": [
+            "T2"
+        ]
+    },
+    {
         "title": "Arrêt Jean Monnet P+R déplacé.",
         "description": "Ligne 6 dir. Rte de Lucinges et 7 dir. Perrier-Aubrac : La montée et la dépose se fera à l'arrêt situé devant le Lycée. Jusqu'à nouvel avis.",
         "effect": "STOP_MOVED",
@@ -59,6 +74,36 @@
         ],
         "routes": [
             "T2"
+        ]
+    },
+    {
+        "title": "Circulation dense – retard à prévoir",
+        "description": "Circulation dense – Ligne 4 : retard à prévoir dans les 2 sens. Horaires en direct bit.ly/3vsl1Zo",
+        "effect": "SIGNIFICANT_DELAYS",
+        "cause": "OTHER_CAUSE",
+        "active_periods": [
+            {
+                "start": 1794464460,
+                "end": 1794469500
+            }
+        ],
+        "routes": [
+            "4"
+        ]
+    },
+    {
+        "title": "Accident - Terminus modifié",
+        "description": "Accident - ligne 5 Départ Bonne de 7h13 effectue son terminus à l'arrêt Croix d’Ambilly. Horaires en direct bit.ly/3vsl1Zo ",
+        "effect": "MODIFIED_SERVICE",
+        "cause": "OTHER_CAUSE",
+        "active_periods": [
+            {
+                "start": 1794465900,
+                "end": 1794469500
+            }
+        ],
+        "routes": [
+            "5"
         ]
     }
 ]
