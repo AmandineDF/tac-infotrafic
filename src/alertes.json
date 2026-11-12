@@ -1,20 +1,5 @@
 [
     {
-        "title": "Circulation dense – retard à prévoir",
-        "description": "Circulation dense – retard à prévoir : ligne T2 dans les 2 sens. Horaires en direct bit.ly/3vsl1Zo",
-        "effect": "SIGNIFICANT_DELAYS",
-        "cause": "OTHER_CAUSE",
-        "active_periods": [
-            {
-                "start": 1794466080,
-                "end": 1794469500
-            }
-        ],
-        "routes": [
-            "T2"
-        ]
-    },
-    {
         "title": "Arrêt Jean Monnet P+R déplacé.",
         "description": "Ligne 6 dir. Rte de Lucinges et 7 dir. Perrier-Aubrac : La montée et la dépose se fera à l'arrêt situé devant le Lycée. Jusqu'à nouvel avis.",
         "effect": "STOP_MOVED",
@@ -78,32 +63,56 @@
     },
     {
         "title": "Circulation dense – retard à prévoir",
-        "description": "Circulation dense – Ligne 4 : retard à prévoir dans les 2 sens. Horaires en direct bit.ly/3vsl1Zo",
+        "description": "Circulation dense – retard à prévoir sur l’ensemble du réseau. Horaires en direct bit.ly/3vsl1Zo",
         "effect": "SIGNIFICANT_DELAYS",
         "cause": "OTHER_CAUSE",
         "active_periods": [
             {
-                "start": 1794464460,
-                "end": 1794469500
+                "start": 1794500880,
+                "end": 1794509100
             }
         ],
         "routes": [
-            "4"
+            "T1",
+            "T2",
+            "5",
+            "4",
+            "6",
+            "7",
+            "8"
         ]
     },
     {
-        "title": "Accident - Terminus modifié",
-        "description": "Accident - ligne 5 Départ Bonne de 7h13 effectue son terminus à l'arrêt Croix d’Ambilly. Horaires en direct bit.ly/3vsl1Zo ",
-        "effect": "MODIFIED_SERVICE",
+        "title": "Intervention pompier – Arrêts non desservis",
+        "description": "Intervention pompier – Dans les 2 sens - Lignes T1 T2 4 8 : Deffaugt & Chablais Parc sont de nouveau desservis. Horaires en direct bit.ly/3vsl1Zo",
+        "effect": "DETOUR",
         "cause": "OTHER_CAUSE",
         "active_periods": [
             {
-                "start": 1794465900,
-                "end": 1794469500
+                "start": 1794495600,
+                "end": 1794509100
             }
         ],
         "routes": [
-            "5"
+            "T1",
+            "T2",
+            "4",
+            "8"
+        ]
+    },
+    {
+        "title": "Ligne S11 - Retard 10 min",
+        "description": "Ligne S11 - Retard de 10 min. Circulation dense. ",
+        "effect": "SIGNIFICANT_DELAYS",
+        "cause": "OTHER_CAUSE",
+        "active_periods": [
+            {
+                "start": 1794500100,
+                "end": 1794501900
+            }
+        ],
+        "routes": [
+            "S11"
         ]
     }
 ]
