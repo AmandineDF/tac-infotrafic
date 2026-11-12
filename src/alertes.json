@@ -60,22 +60,5 @@
         "routes": [
             "T2"
         ]
-    },
-    {
-        "title": "Jour férié – le 11/11/2026",
-        "description": "Jour férié – le 10/04, seules les lignes TANGO, 6 et TAD CHAL (sur réservation uniquement), ainsi que le tramway 17 circuleront. Préparez votre itinéraire bit.ly/3vsl1Zo",
-        "effect": "REDUCED_SERVICE",
-        "cause": "HOLIDAY",
-        "active_periods": [
-            {
-                "start": 1794368700,
-                "end": 1794437100
-            }
-        ],
-        "routes": [
-            "T1",
-            "T2",
-            "4"
-        ]
     }
 ]
