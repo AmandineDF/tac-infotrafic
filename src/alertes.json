@@ -60,59 +60,5 @@
         "routes": [
             "T2"
         ]
-    },
-    {
-        "title": "Circulation dense – retard à prévoir",
-        "description": "Circulation dense – retard à prévoir sur l’ensemble du réseau. Horaires en direct bit.ly/3vsl1Zo",
-        "effect": "SIGNIFICANT_DELAYS",
-        "cause": "OTHER_CAUSE",
-        "active_periods": [
-            {
-                "start": 1794500880,
-                "end": 1794509100
-            }
-        ],
-        "routes": [
-            "T1",
-            "T2",
-            "5",
-            "4",
-            "6",
-            "7",
-            "8"
-        ]
-    },
-    {
-        "title": "Intervention pompier – Arrêts non desservis",
-        "description": "Intervention pompier – Dans les 2 sens - Lignes T1 T2 4 8 : Deffaugt & Chablais Parc sont de nouveau desservis. Horaires en direct bit.ly/3vsl1Zo",
-        "effect": "DETOUR",
-        "cause": "OTHER_CAUSE",
-        "active_periods": [
-            {
-                "start": 1794495600,
-                "end": 1794509100
-            }
-        ],
-        "routes": [
-            "T1",
-            "T2",
-            "4",
-            "8"
-        ]
-    },
-    {
-        "title": "Ligne S11 - Retard 10 min",
-        "description": "Ligne S11 - Retard de 10 min. Circulation dense. ",
-        "effect": "SIGNIFICANT_DELAYS",
-        "cause": "OTHER_CAUSE",
-        "active_periods": [
-            {
-                "start": 1794500100,
-                "end": 1794501900
-            }
-        ],
-        "routes": [
-            "S11"
-        ]
     }
 ]
