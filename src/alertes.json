@@ -60,5 +60,41 @@
         "routes": [
             "T2"
         ]
+    },
+    {
+        "title": "Incident d'exploitation – retard à prévoir",
+        "description": "Incident d'exploitation – Ligne 7 : 15 min de retard au départ de 18h20 de Machilly Gare direction Perrier Aubrac. Horaires en direct bit.ly/3vsl1Zo",
+        "effect": "SIGNIFICANT_DELAYS",
+        "cause": "TECHNICAL_PROBLEM",
+        "active_periods": [
+            {
+                "start": 1794590100,
+                "end": 1794596400
+            }
+        ],
+        "routes": [
+            "T2"
+        ]
+    },
+    {
+        "title": "Circulation dense – retard à prévoir",
+        "description": "Circulation dense – retard à prévoir sur l’ensemble du réseau. Horaires en direct bit.ly/3vsl1Zo",
+        "effect": "SIGNIFICANT_DELAYS",
+        "cause": "OTHER_CAUSE",
+        "active_periods": [
+            {
+                "start": 1794587820,
+                "end": 1794596400
+            }
+        ],
+        "routes": [
+            "T1",
+            "T2",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8"
+        ]
     }
 ]
