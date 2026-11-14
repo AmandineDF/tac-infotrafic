@@ -31,6 +31,21 @@
         ]
     },
     {
+        "title": "Circulation dense – retard à prévoir",
+        "description": "Circulation dense – Retard 10 min ligne T2. Horaires en direct bit.ly/3vsl1Zo",
+        "effect": "SIGNIFICANT_DELAYS",
+        "cause": "OTHER_CAUSE",
+        "active_periods": [
+            {
+                "start": 1794682440,
+                "end": 1794686400
+            }
+        ],
+        "routes": [
+            "T2"
+        ]
+    },
+    {
         "title": "L5-L6 : arrêt Collège La Géline non desservi",
         "description": "L5-L6 : arrêt Collège La Géline non desservi. Report à l'arrêt Chemin des Teppes jusqu'à nouvel ordre. Horaires : bit.ly/3vsl1Zo",
         "effect": "STOP_MOVED",
