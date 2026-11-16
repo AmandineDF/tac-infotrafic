@@ -60,5 +60,26 @@
         "routes": [
             "T2"
         ]
+    },
+    {
+        "title": "Circulation dense – retard à prévoir",
+        "description": "Circulation dense – retard toutes les lignes dans les deux sens 10 minutes Horaires en direct bit.ly/3vsl1Zo",
+        "effect": "SIGNIFICANT_DELAYS",
+        "cause": "OTHER_CAUSE",
+        "active_periods": [
+            {
+                "start": 1794846540,
+                "end": 1794857400
+            }
+        ],
+        "routes": [
+            "T1",
+            "T2",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8"
+        ]
     }
 ]
