@@ -60,5 +60,20 @@
         "routes": [
             "T2"
         ]
+    },
+    {
+        "title": "Circulation dense – retard à prévoir",
+        "description": "Circulation dense – retard ligne T2 dans les deux sens 15 minutes. Horaires en direct bit.ly/3vsl1Zo",
+        "effect": "SIGNIFICANT_DELAYS",
+        "cause": "OTHER_CAUSE",
+        "active_periods": [
+            {
+                "start": 1795023360,
+                "end": 1795030200
+            }
+        ],
+        "routes": [
+            "T2"
+        ]
     }
 ]
