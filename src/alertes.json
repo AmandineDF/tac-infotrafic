@@ -31,21 +31,6 @@
         ]
     },
     {
-        "title": "Circulation dense – Départ modifié",
-        "description": "Circulation dense – ligne 4 Départ prévu à Gare à 8h50 effectue son départ à Place des marchés à 8h56 . Horaires en direct bit.ly/3vsl1Zo",
-        "effect": "MODIFIED_SERVICE",
-        "cause": "OTHER_CAUSE",
-        "active_periods": [
-            {
-                "start": 1795075500,
-                "end": 1795082400
-            }
-        ],
-        "routes": [
-            "4"
-        ]
-    },
-    {
         "title": "L5-L6 : arrêt Collège La Géline non desservi",
         "description": "L5-L6 : arrêt Collège La Géline non desservi. Report à l'arrêt Chemin des Teppes jusqu'à nouvel ordre. Horaires : bit.ly/3vsl1Zo",
         "effect": "STOP_MOVED",
@@ -77,122 +62,18 @@
         ]
     },
     {
-        "title": "Circulation dence – Départ modifié",
-        "description": "Circulation dence– ligne 8 Départ prévu à Vetraz à 7h49 effectue son départ à l'arrêt Jean Monet à 7h54. Horaires en direct bit.ly/3vs.",
-        "effect": "MODIFIED_SERVICE",
+        "title": "Circulation dense – retard à prévoir",
+        "description": "Circulation dense – retard lignes T2 et 8 dans les 2 sens. Horaires en direct bit.ly/3vsl1Zo",
+        "effect": "SIGNIFICANT_DELAYS",
         "cause": "OTHER_CAUSE",
         "active_periods": [
             {
-                "start": 1795071420,
-                "end": 1795081500
+                "start": 1795106160,
+                "end": 1795114800
             }
         ],
         "routes": [
-            "8"
-        ]
-    },
-    {
-        "title": "Circulation dense – Départ modifié",
-        "description": "Circulation dense – ligne 8 Départ prévu à Fossard à 9h20  effectue son départ à l'arrêt La Paix à 9h31 . Horaires en direct bit.ly/3vsl1Zo",
-        "effect": "MODIFIED_SERVICE",
-        "cause": "OTHER_CAUSE",
-        "active_periods": [
-            {
-                "start": 1795075020,
-                "end": 1795082400
-            }
-        ],
-        "routes": [
-            "8"
-        ]
-    },
-    {
-        "title": "{Motif} – Terminus modifié",
-        "description": "Circulation dense – ligne T2 Départ prévu à 8h19 à Prés des plans effectue son départ à l'arrêt VLG Eglise à 8h30 . Horaires en direct bit.ly/3",
-        "effect": "MODIFIED_SERVICE",
-        "cause": "OTHER_CAUSE",
-        "active_periods": [
-            {
-                "start": 1795073100,
-                "end": 1795081500
-            }
-        ],
-        "routes": [
-            "T2"
-        ]
-    },
-    {
-        "title": "Circulation dense – Terminus modifié",
-        "description": "Circulation dense – ligne T2 Départ 7h25 Fossard effectue son terminus à l'arrêt Annemasse Gare . Horaires en direct bit.ly/3vsl1Zo",
-        "effect": "MODIFIED_SERVICE",
-        "cause": "OTHER_CAUSE",
-        "active_periods": [
-            {
-                "start": 1795072860,
-                "end": 1795081500
-            }
-        ],
-        "routes": [
-            "T2"
-        ]
-    },
-    {
-        "title": "Circulation dense – Terminus modifié",
-        "description": "Circulation dense – ligne T1 Départ 7h57  P+R Altéa effectue son terminus à l'arrêt VLG Eglise . Horaires en direct bit.ly/3vsl1Zo",
-        "effect": "MODIFIED_SERVICE",
-        "cause": "OTHER_CAUSE",
-        "active_periods": [
-            {
-                "start": 1795073460,
-                "end": 1795081500
-            }
-        ],
-        "routes": [
-            "T1"
-        ]
-    },
-    {
-        "title": "Circulation dense – Terminus modifié",
-        "description": "Circulation dense – ligne 8 Départ 8h20 Vétraz effectue son terminus à l'arrêt La Paix . Horaires en direct bit.ly/3vsl1Zo",
-        "effect": "MODIFIED_SERVICE",
-        "cause": "OTHER_CAUSE",
-        "active_periods": [
-            {
-                "start": 1795074840,
-                "end": 1795082400
-            }
-        ],
-        "routes": [
-            "8"
-        ]
-    },
-    {
-        "title": "Circulation dense – Terminus modifié",
-        "description": "Circulation dense  – ligne 4 Départ 7h35 St.Julien effectue son terminus à l'arrêt Place des Marchés . Horaires en direct bit.ly/3vsl1Zo",
-        "effect": "MODIFIED_SERVICE",
-        "cause": "OTHER_CAUSE",
-        "active_periods": [
-            {
-                "start": 1795075260,
-                "end": 1795082400
-            }
-        ],
-        "routes": [
-            "4"
-        ]
-    },
-    {
-        "title": "Circulation dence– Terminus modifié",
-        "description": "Circulation dence – ligne 8 Départ 6h52 Fossard effectue son terminus à l'arrêt Jean Monet . Horaires en direct bit.ly/3vsl1Zo",
-        "effect": "MODIFIED_SERVICE",
-        "cause": "OTHER_CAUSE",
-        "active_periods": [
-            {
-                "start": 1795071180,
-                "end": 1795081500
-            }
-        ],
-        "routes": [
+            "T2",
             "8"
         ]
     }
