@@ -60,21 +60,5 @@
         "routes": [
             "T2"
         ]
-    },
-    {
-        "title": "Circulation dense – retard à prévoir",
-        "description": "Circulation dense – retard lignes T2 et 8 dans les 2 sens. Horaires en direct bit.ly/3vsl1Zo",
-        "effect": "SIGNIFICANT_DELAYS",
-        "cause": "OTHER_CAUSE",
-        "active_periods": [
-            {
-                "start": 1795106160,
-                "end": 1795114800
-            }
-        ],
-        "routes": [
-            "T2",
-            "8"
-        ]
     }
 ]
