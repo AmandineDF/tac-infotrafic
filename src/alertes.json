@@ -31,6 +31,21 @@
         ]
     },
     {
+        "title": "Circulation dense – retard à prévoir",
+        "description": "Circulation dense – retard ligne T2 dans les 2 sens 10 mn. Horaires en direct bit.ly/3vsl1Zo",
+        "effect": "SIGNIFICANT_DELAYS",
+        "cause": "OTHER_CAUSE",
+        "active_periods": [
+            {
+                "start": 1795191060,
+                "end": 1795203000
+            }
+        ],
+        "routes": [
+            "T2"
+        ]
+    },
+    {
         "title": "L5-L6 : arrêt Collège La Géline non desservi",
         "description": "L5-L6 : arrêt Collège La Géline non desservi. Report à l'arrêt Chemin des Teppes jusqu'à nouvel ordre. Horaires : bit.ly/3vsl1Zo",
         "effect": "STOP_MOVED",
@@ -59,6 +74,53 @@
         ],
         "routes": [
             "T2"
+        ]
+    },
+    {
+        "title": "Circulation dense – retard à prévoir",
+        "description": "Circulation dense – retard ligne 4 direction Gare 15 mn. Horaires en direct bit.ly/3vsl1Zo",
+        "effect": "SIGNIFICANT_DELAYS",
+        "cause": "OTHER_CAUSE",
+        "active_periods": [
+            {
+                "start": 1795191360,
+                "end": 1795202100
+            }
+        ],
+        "routes": [
+            "4",
+            "8"
+        ]
+    },
+    {
+        "title": "Circulation dense – retard à prévoir",
+        "description": "Circulation dense – retard ligne 8 direction Vetraz 10mn.Horaires en direct bit.ly/3vsl1Zo",
+        "effect": "SIGNIFICANT_DELAYS",
+        "cause": "OTHER_CAUSE",
+        "active_periods": [
+            {
+                "start": 1795191600,
+                "end": 1795202100
+            }
+        ],
+        "routes": [
+            "8"
+        ]
+    },
+    {
+        "title": "Circulation dense – retard à prévoir",
+        "description": "Circulation dense – retard lignes T2 dans les deux sens et 8 direction Bonne 9 minutes. Horaires en direct bit.ly/3vsl1Zo",
+        "effect": "SIGNIFICANT_DELAYS",
+        "cause": "OTHER_CAUSE",
+        "active_periods": [
+            {
+                "start": 1795187760,
+                "end": 1795195800
+            }
+        ],
+        "routes": [
+            "T2",
+            "8"
         ]
     }
 ]
