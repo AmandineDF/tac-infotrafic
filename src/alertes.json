@@ -60,5 +60,20 @@
         "routes": [
             "T2"
         ]
+    },
+    {
+        "title": "Déviation Ligne 6– Arrêts Rte Borly, Vert Vil. non desservis",
+        "description": "Déviation Ligne 6– Arrêts Rte de Borly, Vert Village non desservis du lundi 23 au mardi 24 novembre 2026 à 17h30 . Arrêts report Tanninges et Cranves Sales Mairie",
+        "effect": "DETOUR",
+        "cause": "CONSTRUCTION",
+        "active_periods": [
+            {
+                "start": 1795392000,
+                "end": 1795453200
+            }
+        ],
+        "routes": [
+            "6"
+        ]
     }
 ]
