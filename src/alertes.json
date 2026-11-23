@@ -16,6 +16,23 @@
         ]
     },
     {
+        "title": "Déviation T1, 4, 7  – Arrêt Verdun non desservi ",
+        "description": "Déviation T1, 4, 7  Arrêt Verdun non desservi du 24/11/26 au 27/11/26. Merci de vous reporter à l'arrêt provisoire situé sur le trottoir derrière l'arrêt de bus habituel.",
+        "effect": "DETOUR",
+        "cause": "CONSTRUCTION",
+        "active_periods": [
+            {
+                "start": 1795388400,
+                "end": 1795820340
+            }
+        ],
+        "routes": [
+            "T1",
+            "4",
+            "7"
+        ]
+    },
+    {
         "title": "L5-L6 : arrêt Collège La Géline non desservi",
         "description": "L5-L6 : arrêt Collège La Géline non desservi. Report à l'arrêt Chemin des Teppes jusqu'à nouvel ordre. Horaires : bit.ly/3vsl1Zo",
         "effect": "STOP_MOVED",
@@ -44,21 +61,6 @@
         ],
         "routes": [
             "T2"
-        ]
-    },
-    {
-        "title": "Déviation Ligne 6– Arrêts Rte Borly, Vert Vil. non desservis",
-        "description": "Déviation Ligne 6– Arrêts Rte de Borly, Vert Village non desservis du lundi 23 au mardi 24 novembre 2026 à 17h30 . Arrêts report Tanninges et Cranves Sales Mairie",
-        "effect": "DETOUR",
-        "cause": "CONSTRUCTION",
-        "active_periods": [
-            {
-                "start": 1795392000,
-                "end": 1795453200
-            }
-        ],
-        "routes": [
-            "6"
         ]
     }
 ]
