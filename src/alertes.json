@@ -62,5 +62,35 @@
         "routes": [
             "T2"
         ]
+    },
+    {
+        "title": "Déviation Ligne 6  – Arrêt Route de Borly non desservi ",
+        "description": "Déviation ligne 6  Arrêt Route de Borly non desservi du 23/11/26 au 25/11/26. Arrêt de report Taninges",
+        "effect": "DETOUR",
+        "cause": "CONSTRUCTION",
+        "active_periods": [
+            {
+                "start": 1795391100,
+                "end": 1795624200
+            }
+        ],
+        "routes": [
+            "6"
+        ]
+    },
+    {
+        "title": "Incident d'exploitation – retard à prévoir",
+        "description": "Incident d'exploitation – retard 10min de la ligne 6 en direction de Perrier Aubrac. Horaires en direct bit.ly/3vsl1Zo",
+        "effect": "SIGNIFICANT_DELAYS",
+        "cause": "OTHER_CAUSE",
+        "active_periods": [
+            {
+                "start": 1795534500,
+                "end": 1795545900
+            }
+        ],
+        "routes": [
+            "6"
+        ]
     }
 ]
