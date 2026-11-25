@@ -77,20 +77,5 @@
         "routes": [
             "6"
         ]
-    },
-    {
-        "title": "Incident d'exploitation – retard à prévoir",
-        "description": "Incident d'exploitation – retard 10min de la ligne 6 en direction de Perrier Aubrac. Horaires en direct bit.ly/3vsl1Zo",
-        "effect": "SIGNIFICANT_DELAYS",
-        "cause": "OTHER_CAUSE",
-        "active_periods": [
-            {
-                "start": 1795534500,
-                "end": 1795545900
-            }
-        ],
-        "routes": [
-            "6"
-        ]
     }
 ]
