@@ -62,20 +62,5 @@
         "routes": [
             "T2"
         ]
-    },
-    {
-        "title": "Incident d'exploitation – retard à prévoir",
-        "description": "Incident Voyageur – retard ligne 5 au départ de la Gare d’Annemasse. Horaires en direct bit.ly/3vsl1Zo",
-        "effect": "SIGNIFICANT_DELAYS",
-        "cause": "OTHER_CAUSE",
-        "active_periods": [
-            {
-                "start": 1795695900,
-                "end": 1795701600
-            }
-        ],
-        "routes": [
-            "5"
-        ]
     }
 ]
